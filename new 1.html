@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet"  
+   href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	  
+	<script>
+      
+        $(document).ready(function(){
+           $(".btn1").click(function(){
+             $("p").hide();});
+           $(".btn2").click(function(){
+             $("p").show();});
+               });
+		  
+		  $(document).ready(function(){
+           $("button").click(function(){
+            $("p:first").addClass("intro");});
+              });
+           
+	   $(function(){
+	     $("#accordion").accordion();
+		 });
+		 
+		 $("#drink").click(function(){
+        $("p1").css("color", "red").slideUp(2000).slideDown(2000);
+           });
+
+
+		 		 
+		 </script>
+		 
+		 <style>
+         .intro {
+            font-size:150%;
+            color: red;}
+			</style>
+                       
+	 
+	 <script>
+	 $(function(){
+	 $("#datepicker").datepicker();
+	 });
+	 </script>
+	  </head>
+       <body>
+      
+	  
+	  <button class="btn1">DISAPPEAR</button>
+	  <button class="btn2">REAPPEAR</button>
+	  <button>CLASS NAME</button>
+	  
+
+	  
+	   <div id="accordion">
+       <h1>section 1</h1>
+        <div>
+         	 <p>Stress can be a motivator. It can be essential to survival. The "fight-or-flight" mechanism can tell us when and how to respond to danger. However, if this mechanism is triggered too easily, or when there are too many stressors at one time, it can undermine a person's mental and physical health and become harmful</p>
+			 </div>
+			 
+		
+ 		<h2>section 2</h2>
+		<div>
+		     <p>According to the annual stress survey conducted by the American Psychological Association (APA), average stress levels in the United States (U.S.) rose from 4.9 to 5.1 on a scale from 1 to 10 in 2015. The main reasons given are employment and money</p>
+	    </div>
+	    <h3><p>Date: <input type="text" id="datepicker"></p></h3>
+		
+		<h4>NAME AND ID</h4>
+		<dir class="frame1" style="text-align:down">
+		  <div>
+		  <p>Student name: DanishSapra</p>
+		  <p>Student ID: c0726552</p></div>
+ </body>
+ </html>  
+	
